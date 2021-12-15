@@ -1,1 +1,35 @@
+//Draw Scene 1 Function 
 
+var drawScene1 = function() {
+    currentScene = 1;
+    
+    //Bitmoji Variables
+    var x=100;
+    var y=100;
+    var bitmojiheight=150;
+    
+    //Draw Adel Bitmoji Function
+    *called drawAdelBitmoji instead of drawBitmoji*
+    
+    //Draw Brynne Bitmoji Function
+    *called drawBrynneBitmoji instead of drawBitmoji*
+
+    //Cover Page Default Setup
+    background(237, 255, 239);
+    fill(217, 31, 31);
+    textAlign(CENTER, TOP);
+    textFont(n, 49);
+    text("Christmas\nColor By Number\nGame Book", 198, 40); //Color By Number Game Book Title
+    textSize(20);
+    fill(0, 0, 0);
+    text("Created by: Adel Gage & Brynne Wright", 197, 225);
+    
+    //Draw Adel Bitmoji Call
+    
+    
+    //Draw Brynne Bitmoji Call
+    
+    
+    //Draw Button Call
+    buttonNext.draw();
+};
