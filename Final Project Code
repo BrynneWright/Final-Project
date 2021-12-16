@@ -25,11 +25,71 @@ var drawScene1 = function() {
     text("Created by: Adel Gage & Brynne Wright", 197, 225);
     
     //Draw Adel Bitmoji Call
-    
+    var drawAdelBitmoji=function(x,y,bitmojiHeight)
+    {
+noStroke();
+fill(250, 224, 189);
+ellipse(x+100*bitmojiHeight/150,y+71*bitmojiHeight/150,70*bitmojiHeight/150,100*bitmojiHeight/150); //head
+ellipse(x+100*bitmojiHeight/150,y+63*bitmojiHeight/150,79*bitmojiHeight/150,90*bitmojiHeight/150);
+rect(x+82*bitmojiHeight/150,y+114*bitmojiHeight/150,35*bitmojiHeight/150,27*bitmojiHeight/150);
+fill(186, 180, 191);
+rect(x+15*bitmojiHeight/150,y+140*bitmojiHeight/150,170*bitmojiHeight/150,183*bitmojiHeight/150); //shirt
+fill(235, 188, 112);
+rect(x+40*bitmojiHeight/150,y+37*bitmojiHeight/150,43*bitmojiHeight/150,247*bitmojiHeight/150); //hair
+rect(x+117*bitmojiHeight/150,y+37*bitmojiHeight/150,43*bitmojiHeight/150,247*bitmojiHeight/150); //hair
+fill(237, 255, 239);
+rect(x+18*bitmojiHeight/150,y+23*bitmojiHeight/150,35*bitmojiHeight/150,85*bitmojiHeight/150); //whitehair
+rect(x+145*bitmojiHeight/150,y+23*bitmojiHeight/150,35*bitmojiHeight/150,85*bitmojiHeight/150); //whitehair
+fill(235, 188, 112);
+arc(x+70*bitmojiHeight/150,y+99*bitmojiHeight/150,60*bitmojiHeight/150,151*bitmojiHeight/150,118,294);
+arc(x+126*bitmojiHeight/150,y+98*bitmojiHeight/150,69*bitmojiHeight/150,149*bitmojiHeight/150,-100,40);
+fill(250,224,189);
+ellipse(x+100*bitmojiHeight/150,y+71*bitmojiHeight/150,70*bitmojiHeight/150,100*bitmojiHeight/150); //headoverhair
+noStroke(); //christmas hat
+fill(181, 21, 0);
+triangle(x+47*bitmojiHeight/150,y+37*bitmojiHeight/150,x+153*bitmojiHeight/150,y+37*bitmojiHeight/150,x+100*bitmojiHeight/150,y-27*bitmojiHeight/150);//triangle hat
+bezier(x+177*bitmojiHeight/150,y+37*bitmojiHeight/150,x+158*bitmojiHeight/150,y-32*bitmojiHeight/150,x+108*bitmojiHeight/150,y-49*bitmojiHeight/150,x+86*bitmojiHeight/150,y-20*bitmojiHeight/150);
+arc(x+107*bitmojiHeight/150,y+43*bitmojiHeight/150,82*bitmojiHeight/150,154*bitmojiHeight/150, 192, 285);
+fill(250, 250, 250);
+ellipse(x+53*bitmojiHeight/150,y+42*bitmojiHeight/150,20*bitmojiHeight/150,20*bitmojiHeight/150);
+ellipse(x+68*bitmojiHeight/150,y+42*bitmojiHeight/150,20*bitmojiHeight/150,20*bitmojiHeight/150);
+ellipse(x+84*bitmojiHeight/150,y+42*bitmojiHeight/150,20*bitmojiHeight/150,20*bitmojiHeight/150);
+ellipse(x+101*bitmojiHeight/150,y+42*bitmojiHeight/150,20*bitmojiHeight/150,20*bitmojiHeight/150);
+ellipse(x+117*bitmojiHeight/150,y+42*bitmojiHeight/150,20*bitmojiHeight/150,20*bitmojiHeight/150);
+ellipse(x+132*bitmojiHeight/150,y+42*bitmojiHeight/150,20*bitmojiHeight/150,20*bitmojiHeight/150);
+ellipse(x+146*bitmojiHeight/150,y+42*bitmojiHeight/150,20*bitmojiHeight/150,20*bitmojiHeight/150);
+ellipse(x+172*bitmojiHeight/150,y+38*bitmojiHeight/150,20*bitmojiHeight/150,20*bitmojiHeight/150);
+
+stroke(0, 0, 0);
+fill(250, 250, 250);
+arc(x+83*bitmojiHeight/150,y+65*bitmojiHeight/150,18*bitmojiHeight/150,14*bitmojiHeight/150,192,360); //eyewhite
+arc(x+116*bitmojiHeight/150,y+65*bitmojiHeight/150,18*bitmojiHeight/150,14*bitmojiHeight/150,180,355); //eyewhite
+fill(132, 209, 164);
+ellipse(x+83*bitmojiHeight/150,y+63*bitmojiHeight/150,8*bitmojiHeight/150,6*bitmojiHeight/150); //greeneye
+ellipse(x+116*bitmojiHeight/150,y+63*bitmojiHeight/150,8*bitmojiHeight/150,6*bitmojiHeight/150); //greeneye
+ellipse(x+83*bitmojiHeight/150,y+63*bitmojiHeight/150,2*bitmojiHeight/150,2*bitmojiHeight/150); //blackeye
+ellipse(x+116*bitmojiHeight/150,y+63*bitmojiHeight/150,2*bitmojiHeight/150,2*bitmojiHeight/150); //blackeye
+stroke(163, 130, 95);
+fill(250, 224, 189);
+bezier(x+103*bitmojiHeight/150,y+68*bitmojiHeight/150,x+105*bitmojiHeight/150,y+80*bitmojiHeight/150,x+110*bitmojiHeight/150,y+87*bitmojiHeight/150,x+104*bitmojiHeight/150,y+84*bitmojiHeight/150); //nose
+bezier(x+97*bitmojiHeight/150,y+68*bitmojiHeight/150,x+97*bitmojiHeight/150,y+77*bitmojiHeight/150,x+89*bitmojiHeight/150,y+87*bitmojiHeight/150,x+97*bitmojiHeight/150,y+84*bitmojiHeight/150); //nose
+fill(97, 83, 83);
+arc(x+96*bitmojiHeight/150,y+86*bitmojiHeight/150,4*bitmojiHeight/150,4*bitmojiHeight/150,216,338); //nostril
+arc(x+103*bitmojiHeight/150,y+86*bitmojiHeight/150,4*bitmojiHeight/150,4*bitmojiHeight/150,216,338); //nostril
+fill(227, 154, 177);
+arc(x+100*bitmojiHeight/150,y+95*bitmojiHeight/150,30*bitmojiHeight/150,13*bitmojiHeight/150,-2,183); //smile
+fill(232, 184, 126);
+quad(x+96*bitmojiHeight/150,y+53*bitmojiHeight/150,x+77*bitmojiHeight/150,y+48*bitmojiHeight/150,x+69*bitmojiHeight/150,y+54*bitmojiHeight/150,x+78*bitmojiHeight/150,y+51*bitmojiHeight/150); //left eyebrow
+quad(x+131*bitmojiHeight/150,y+53*bitmojiHeight/150,x+122*bitmojiHeight/150,y+49*bitmojiHeight/150,x+105*bitmojiHeight/150,y+54*bitmojiHeight/150,x+118*bitmojiHeight/150,y+52*bitmojiHeight/150); //right eyebrow
+fill(28, 12, 12);
+text("AG",x+90*bitmojiHeight/150,y+180*bitmojiHeight/150,100*bitmojiHeight/150,100*bitmojiHeight/150);
+
+};
     
     //Draw Brynne Bitmoji Call
     
     
     //Draw Button Call
     buttonNext.draw();
+    drawAdelBitmoji(20,292,50);
 };
