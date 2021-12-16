@@ -9,23 +9,7 @@ var drawScene1 = function() {
     var bitmojiheight=150;
     
     //Draw Adel Bitmoji Function
-    *called drawAdelBitmoji instead of drawBitmoji*
-    
-    //Draw Brynne Bitmoji Function
-    *called drawBrynneBitmoji instead of drawBitmoji*
-
-    //Cover Page Default Setup
-    background(237, 255, 239);
-    fill(217, 31, 31);
-    textAlign(CENTER, TOP);
-    textFont(n, 49);
-    text("Christmas\nColor By Number\nGame Book", 198, 40); //Color By Number Game Book Title
-    textSize(20);
-    fill(0, 0, 0);
-    text("Created by: Adel Gage & Brynne Wright", 197, 225);
-    
-    //Draw Adel Bitmoji Call
-      var drawAdelBitmoji=function(x,y,bitmojiHeight)
+    var drawAdelBitmoji=function(x,y,bitmojiHeight)
     {
 noStroke();
 fill(250, 224, 189);
@@ -86,10 +70,102 @@ text("AG",x+90*bitmojiHeight/150,y+180*bitmojiHeight/150,100*bitmojiHeight/150,1
 
 };
     
-    //Draw Brynne Bitmoji Call
+    //Draw Brynne Bitmoji Function
+    var drawBrynneBitmoji = function(bitmojiX, bitmojiY, bitmojiHeight)
+{
+// Neck
+stroke(245, 211, 174);
+fill(255, 219, 178);
+rect(bitmojiX - (bitmojiHeight/100*19), bitmojiY - (bitmojiHeight/100*20), bitmojiHeight/100*31, bitmojiHeight/100*10);
+// Turtle Neck
+stroke(210, 0, 0);
+fill(255, 0, 0);
+rect(bitmojiX - (bitmojiHeight/100*28), bitmojiY - (bitmojiHeight/100*10), bitmojiHeight/100*50, bitmojiHeight/100*15);
+// Body
+stroke(210, 0, 0);
+rect(bitmojiX - (bitmojiHeight/100*70), bitmojiY + (bitmojiHeight/100*5), bitmojiHeight/100*140, bitmojiHeight/100*194);
+// Arms
+stroke(210, 0, 0);
+fill(255, 0, 0);
+rect(bitmojiX - (bitmojiHeight/100*99), bitmojiY + (bitmojiHeight/100*5), bitmojiHeight/100*28, bitmojiHeight/100*190);
+rect(bitmojiX + (bitmojiHeight/100*71), bitmojiY + (bitmojiHeight/100*5), bitmojiHeight/100*28, bitmojiHeight/100*190);
+// Head
+stroke(245, 209, 171);
+fill(255, 219, 178);
+ellipse(bitmojiX - (bitmojiHeight/100*4), bitmojiY - (bitmojiHeight/100*59), bitmojiHeight/100*70, bitmojiHeight/100*90);
+// Eyes
+stroke(189, 189, 189);
+fill(255, 255, 255);
+ellipse(bitmojiX - (bitmojiHeight/100*16), bitmojiY - (bitmojiHeight/100*59), bitmojiHeight/100*17, bitmojiHeight/100*12);
+ellipse(bitmojiX + (bitmojiHeight/100*13), bitmojiY - (bitmojiHeight/100*59), bitmojiHeight/100*17, bitmojiHeight/100*12);
+fill(0, 166, 144);
+ellipse(bitmojiX + (bitmojiHeight/100*13), bitmojiY - (bitmojiHeight/100*59), bitmojiHeight/100*8, bitmojiHeight/100*10);
+ellipse(bitmojiX - (bitmojiHeight/100*16), bitmojiY - (bitmojiHeight/100*59), bitmojiHeight/100*8, bitmojiHeight/100*10);
+fill(0, 0, 0);
+ellipse(bitmojiX - (bitmojiHeight/100*16), bitmojiY - (bitmojiHeight/100*59), bitmojiHeight/100*5, bitmojiHeight/100*5);
+ellipse(bitmojiX + (bitmojiHeight/100*13), bitmojiY - (bitmojiHeight/100*59), bitmojiHeight/100*5, bitmojiHeight/100*5);
+// Eyebrows
+stroke(140, 105, 74);
+fill(145, 108, 92);
+arc(bitmojiX - (bitmojiHeight/100*17), bitmojiY - (bitmojiHeight/100*66), bitmojiHeight/100*24, bitmojiHeight/100*6, 186, 383);
+arc(bitmojiX + (bitmojiHeight/100*16), bitmojiY - (bitmojiHeight/100*66), bitmojiHeight/100*24, bitmojiHeight/100*6, 159, 361);
+// Eye Makeup
+stroke(133, 133, 133);
+fill(48, 48, 48);
+arc(bitmojiX + (bitmojiHeight/100*15), bitmojiY - (bitmojiHeight/100*63), bitmojiHeight/100*17, bitmojiHeight/100*5, 182, 402);
+arc(bitmojiX - (bitmojiHeight/100*17), bitmojiY - (bitmojiHeight/100*63), bitmojiHeight/100*17, bitmojiHeight/100*5, 154, 355);
+// Mouth
+stroke(240, 189, 189);
+fill(224, 121, 171);
+ellipse(bitmojiX - (bitmojiHeight/100*1), bitmojiY - (bitmojiHeight/100*30), bitmojiHeight/100*27, bitmojiHeight/100*8);
+// Hair
+stroke(237, 226, 176);
+fill(255, 243, 184);
+rect(bitmojiX - (bitmojiHeight/100*56), bitmojiY - (bitmojiHeight/100*87), bitmojiHeight/100*31, bitmojiHeight/100*273);
+rect(bitmojiX + (bitmojiHeight/100*26), bitmojiY - (bitmojiHeight/100*89), bitmojiHeight/100*19, bitmojiHeight/100*93);
+// Nose
+stroke(235, 196, 155);
+fill(245, 207, 166);
+triangle(bitmojiX - (bitmojiHeight/100*2), bitmojiY - (bitmojiHeight/100*58), bitmojiX + (bitmojiHeight/100*4), bitmojiY - (bitmojiHeight/100*42), bitmojiX - (bitmojiHeight/100*4), bitmojiY - (bitmojiHeight/100*41));
+//Christmas Tree Hat
+stroke(19, 102, 22);
+fill(21, 140, 0);
+triangle(bitmojiX - (bitmojiHeight/100*28), bitmojiY - (bitmojiHeight/100*166), bitmojiX - (bitmojiHeight/100*64), bitmojiY - (bitmojiHeight/100*80), bitmojiX - (bitmojiHeight/100*-50), bitmojiY - (bitmojiHeight/100*85));
+strokeWeight(1.5);
+stroke(255, 0, 0);
+fill(255, 255, 255);
+ellipse(bitmojiX - (bitmojiHeight/100*47), bitmojiY - (bitmojiHeight/100*99), bitmojiHeight/100*12, bitmojiHeight/100*12);
+ellipse(bitmojiX - (bitmojiHeight/100*-22), bitmojiY - (bitmojiHeight/100*107), bitmojiHeight/100*12, bitmojiHeight/100*12);
+ellipse(bitmojiX - (bitmojiHeight/100*18), bitmojiY - (bitmojiHeight/100*134), bitmojiHeight/100*12, bitmojiHeight/100*12);
+stroke(145, 0, 255);
+ellipse(bitmojiX - (bitmojiHeight/100*14), bitmojiY - (bitmojiHeight/100*102), bitmojiHeight/100*12, bitmojiHeight/100*12);
+ellipse(bitmojiX - (bitmojiHeight/100*1), bitmojiY - (bitmojiHeight/100*131), bitmojiHeight/100*12, bitmojiHeight/100*12);
+stroke(17, 255, 0);
+ellipse(bitmojiX - (bitmojiHeight/100*-5), bitmojiY - (bitmojiHeight/100*104), bitmojiHeight/100*12, bitmojiHeight/100*12);
+stroke(0, 221, 255);
+ellipse(bitmojiX - (bitmojiHeight/100*29), bitmojiY - (bitmojiHeight/100*98), bitmojiHeight/100*12, bitmojiHeight/100*12);
+ellipse(bitmojiX - (bitmojiHeight/100*35), bitmojiY - (bitmojiHeight/100*131), bitmojiHeight/100*12, bitmojiHeight/100*12);
+stroke(251, 255, 0);
+fill(255, 255, 255);
+ellipse(bitmojiX - (bitmojiHeight/100*26), bitmojiY - (bitmojiHeight/100*163), bitmojiHeight/100*17, bitmojiHeight/100*18);
+};
+
+    //Cover Page Default Setup
+    background(237, 255, 239);
+    fill(217, 31, 31);
+    textAlign(CENTER, TOP);
+    textFont(n, 49);
+    text("Christmas\nColor By Number\nGame Book", 198, 40); //Color By Number Game Book Title
+    textSize(20);
+    fill(0, 0, 0);
+    text("Created by: Adel Gage & Brynne Wright", 197, 225);
     
+    //Draw Adel Bitmoji Call
+    drawAdelBitmoji(20,292,50);
+    
+    //Draw Brynne Bitmoji Call
+    drawBrynneBitmoji(135, 334, 34);
     
     //Draw Button Call
     buttonNext.draw();
-    drawAdelBitmoji(20,292,50)
 };
