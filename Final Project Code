@@ -169,3 +169,26 @@ ellipse(bitmojiX - (bitmojiHeight/100*26), bitmojiY - (bitmojiHeight/100*163), b
     //Draw Button Call
     buttonNext.draw();
 };
+
+//draw Scene 2
+var drawScene2 = function() {
+    currentScene = 2;
+    
+    //Instructions Page Setup
+    background(237, 255, 239);
+    textSize(30);
+    fill(217, 31, 31);
+    text("Instructions:", 10, 80);
+    textSize(17);
+    fill(0, 0, 0);
+    text("Step 1) Select a color to begin drawing with.", 10, 125);
+    text("Step 2) Color each part of the page with the color\ncorresponding to its number.", 10, 165);
+    text("Step 3) Repeat Step 2 until the entire page is filled\nand the image is revealed.", 10, 220);
+    text("Step 4) Click [Size +] and [Size -] to adjust the\nwidth of your pencil.", 10, 270);
+    text("Step 5) Go to the next page for a new drawing!", 10, 320);
+    
+    //draw Buttons Call
+    buttonNext.draw();
+    buttonBack.draw();
+};
+
