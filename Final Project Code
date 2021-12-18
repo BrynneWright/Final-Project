@@ -155,6 +155,7 @@ ellipse(bitmojiX - (bitmojiHeight/100*26), bitmojiY - (bitmojiHeight/100*163), b
     fill(217, 31, 31);
     textAlign(CENTER, TOP);
     textFont(n, 49);
+    //Book Title
     text("Christmas\nColor By Number\nGame Book", 198, 40); //Color By Number Game Book Title
     textSize(20);
     fill(0, 0, 0);
@@ -181,6 +182,7 @@ var drawScene2 = function() {
     text("Instructions:", 10, 80);
     textSize(17);
     fill(0, 0, 0);
+    //Instruction Steps
     text("Step 1) Select a color to begin drawing with.", 10, 125);
     text("Step 2) Color each part of the page with the color\ncorresponding to its number.", 10, 165);
     text("Step 3) Repeat Step 2 until the entire page is filled\nand the image is revealed.", 10, 220);
